@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    justify-content: center ;
+    background-color: dimgrey;
+}
+.Background{
+    display: flex;
+    justify-content: center ;
+    background-color: dimgrey;
+}
+
+.LogInFrame{
+    border: 2px;
+    border-color: aquamarine;
+}
