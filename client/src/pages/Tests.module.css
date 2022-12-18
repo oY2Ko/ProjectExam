@@ -1,0 +1,9 @@
+.TestFrame{
+    border-radius: 3px;
+    border-color: aqua;
+    margin: 20px;
+}
+
+.DefaultText{
+    font-size: 12pt;
+}

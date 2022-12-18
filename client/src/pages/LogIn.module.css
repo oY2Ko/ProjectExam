@@ -1,15 +1,22 @@
-body{
+/* body{
     display: flex;
     justify-content: center ;
     background-color: dimgrey;
-}
+} */
+
 .Background{
     display: flex;
     justify-content: center ;
-    background-color: dimgrey;
+    background-color: #0B0C10;
+    height: 700px;
+
 }
 
 .LogInFrame{
     border: 2px;
     border-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

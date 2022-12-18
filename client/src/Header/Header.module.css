@@ -1,0 +1,15 @@
+.Header{
+    display: flex;
+    justify-content: space-around;
+    height: 86px;
+    align-items: center;
+    background-color: #1F2833;
+}
+.Link{
+    font-size: 18pt;
+    color: #66FCF1;
+    text-decoration: none;
+}
+:visited.Link{
+    color: #66FCF1;
+}
