@@ -5,7 +5,10 @@ const Header = () => {
     return ( 
         <div className={classes.Header}>
             <Link className={classes.Link} to={"/Tests"}> Тесты</Link>
-            <Link className={classes.Link} to={"/LogIn"}>Регистрация</Link>
+            <div className={classes.Test}></div>
+            <Link className={classes.Link}>Зарегистрировать пользователя</Link>
+            <div className={classes.Test}></div>
+            <Link className={classes.Link} to={"/LogIn"}>Вход</Link>
         </div>
      );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './TestFrame.module.css'
-import {useNavigate} from 'react-router-dom'
+import {Navigate, useNavigate} from 'react-router-dom'
 
 const TestFrame = (props) => {
     const navigate = useNavigate();
@@ -9,10 +9,13 @@ const TestFrame = (props) => {
         navigate("/Test", {id: 1});
     }
     return ( 
-        <div className={classes.TestFrame}>
-            <h4>{props.key}Название теста:</h4>
-            <h5 className={classes.DefaultText}>{props.Title}</h5>
-        </div>
+        <details className={classes.TestFrame}>
+            <summary>
+                <div className={classes.Topic}>{props.Title}</div>
+            </summary>
+            <div className={classes.Description}>Описание</div>
+            <div className={classes.DescriptionText}>{props.Description}</div>
+        </details>
      );
 }
  

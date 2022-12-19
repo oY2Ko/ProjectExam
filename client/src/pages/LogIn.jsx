@@ -7,6 +7,7 @@ const LogIn = () => {
     return ( 
         <div className={classes.Background}>
             <div className={classes.LogInFrame}>
+                <h3>Вход</h3>
                 <CustomInput placeholder='Логин'/>
                 <CustomInput type={"password"} placeholder='Пароль'/>
                 <CustomButton>Войти</CustomButton>

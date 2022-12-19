@@ -1,6 +1,6 @@
 .Header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 86px;
     align-items: center;
     background-color: #1F2833;
@@ -9,7 +9,14 @@
     font-size: 18pt;
     color: #66FCF1;
     text-decoration: none;
+    display: flex;
+    justify-content:center;
 }
 :visited.Link{
     color: #66FCF1;
+}
+.Test{
+    width: 0px;
+    height: 83px;
+    border: solid #66FCF1 1px;
 }
