@@ -8,7 +8,7 @@ const Tests = (props) => {
     <TestFrame Title='3. Тест 3' Description='Описание теста 3' Mark='5'/>, <TestFrame Title='4. Тест 4' Description='Описание теста 4' Mark='5'/>,
     <TestFrame Title='5. Тест 5' Description='Описание теста 5' Mark='5'/>);
     return ( 
-        <div >
+        <div className={classes.Background}>
             <div className={classes.Topic}>Список тестов</div>
             <hr className={classes.Hr}/>
             <div className={classes.TestsFrame}>

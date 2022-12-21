@@ -1,8 +1,8 @@
 .TestFrame{
     border:2px;
     margin: 20px;
-    border: solid #000;
-    border-width: 2px;
+    border: solid #66FCF1 ;
+    border-width: 1px;
     border-radius:  7px;
     background-color: transparent;
     padding-left: 15px;
@@ -14,6 +14,7 @@
 .Topic{
     font-size: 16pt;
     font-weight: 700;
+    color: #66FCF1
 }
 
 .DefaultText{
@@ -24,11 +25,13 @@
     font-size: 14pt;
     margin: 5px;
     font-weight: 500;
+    color:white;
 }
 
 .DescriptionText{
     font-size: 14pt;
     margin: 5px;
+    color: white;
 }
 
 summary::-webkit-details-marker{display:none;}

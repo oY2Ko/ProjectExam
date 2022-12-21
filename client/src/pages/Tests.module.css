@@ -1,5 +1,5 @@
 .TestsFrame{
-    border: solid 2px ;
+    border: solid 2px #66FCF1;
     width: 1000px;
     margin: 0 auto;
     justify-content: center;
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-    margin: 20px;
+    color: white;
 }
 
 .CheckBox{
@@ -27,4 +27,12 @@
 }
 .Hr{
     margin-bottom: 50px;
+    color: #66FCF1;
+    background-color: #66FCF1;
+    height: 1px;
+    border-color: #66FCF1;
+}
+.Background{
+    background-color: #1F2833;
+    height: 878px;
 }
