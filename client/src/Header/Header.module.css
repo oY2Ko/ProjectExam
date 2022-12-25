@@ -17,6 +17,13 @@
 }
 .Test{
     width: 0px;
-    height: 83px;
-    border: solid #66FCF1 1px;
+    height: 85px;
+    border-left: solid #66FCF1 3px;
+}
+.Hr{
+    margin: 0px;
+    color: #66FCF1;
+    background-color: #66FCF1;
+    height: 1px;
+    border-color: #66FCF1;
 }

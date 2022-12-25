@@ -5,6 +5,7 @@
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 60px;
 }
 
 .Topic{
@@ -26,7 +27,7 @@
     justify-content: center;
 }
 .Hr{
-    margin-bottom: 50px;
+    margin: 0px;
     color: #66FCF1;
     background-color: #66FCF1;
     height: 1px;

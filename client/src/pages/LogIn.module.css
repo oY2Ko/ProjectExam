@@ -9,10 +9,11 @@
     justify-content: center ;
     align-items: center;
     height: 700px;
+    background-color: #1F2833;
 }
 
 .LogInFrame{
-    border: solid #000 2px;
+    border: solid #66FCF1 2px;
     border-radius: 7px;
     display: flex;
     height: 250px;
@@ -20,4 +21,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.Topic{
+    font-size: 24pt;
+    color: white;
+    margin: 10px;
 }
