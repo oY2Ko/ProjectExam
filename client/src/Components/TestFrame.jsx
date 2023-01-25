@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './TestFrame.module.css'
 import {Navigate, useNavigate} from 'react-router-dom'
+import CustomButton from '../Inputs/CustomButton';
 
 const TestFrame = (props) => {
     const navigate = useNavigate();
@@ -15,6 +16,7 @@ const TestFrame = (props) => {
             </summary>
             <div className={classes.Description}>Описание</div>
             <div className={classes.DescriptionText}>{props.Description}</div>
+            <CustomButton>Изменить</CustomButton>
         </details>
      );
 }
