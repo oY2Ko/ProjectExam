@@ -1,0 +1,8 @@
+.Background{
+    background-color: #1F2833;
+    height: 878px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

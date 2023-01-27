@@ -2,8 +2,13 @@ import React from 'react';
 import classes from './CustomInput.module.css'
 
 const CustomInput = (props) => {
+
+    const f = (event) => {
+        props.onChange(event.target.value)
+    }
+     
     return ( 
-        <input placeholder={props.placeholder} className={classes.CustomInput}/>
+        <input onChange={f} placeholder={props.placeholder} className={classes.CustomInput}/>
      );
 }
  
