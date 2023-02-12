@@ -18,7 +18,7 @@ const AddTest = () => {
         // axios.post('https://localhost:7232/Tests/AddTest', name ,description)
         axios.post(
             'https://localhost:7232/Tests/AddTest', {name:name, description : description}, {headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
+                'Content-Type': 'application/json'
               }}
            )
     }
