@@ -13,12 +13,10 @@ const AddTest = () => {
     
 
     const postTest = () => {
-        console.log(name);
-        console.log(description);
         // axios.post('https://localhost:7232/Tests/AddTest', name ,description)
         axios.post(
             'https://localhost:7232/Tests/AddTest', {name:name, description : description}, {headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'multipart/form-data'
               }}
            )
     }

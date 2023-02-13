@@ -7,7 +7,7 @@ const TestFrame = (props) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/Test", {id: 1});
+        navigate("/Test", { state: { id: props.Id}});
     }
     return ( 
         <details className={classes.TestFrame}>
@@ -16,7 +16,7 @@ const TestFrame = (props) => {
             </summary>
             <div className={classes.Description}>Описание</div>
             <div className={classes.DescriptionText}>{props.Description}</div>
-            <CustomButton>Изменить</CustomButton>
+            <CustomButton onClick={handleClick}>Изменить</CustomButton>
         </details>
      );
 }

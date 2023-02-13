@@ -32,7 +32,6 @@ const Tests = (props) => {
             <hr className={classes.Hr}/>
             <CustomButton onClick={handleClick}>Добавить</CustomButton>
             <div className={classes.TestsFrame}>
-            {console.log(tests)}
             {tests.map((test, i) =>
                 <div className={classes.Container} key={i}>
                     <input className={classes.CheckBox} type="checkbox"/>
