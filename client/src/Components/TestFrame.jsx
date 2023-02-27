@@ -7,7 +7,7 @@ const TestFrame = (props) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/Test", { state: { id: props.Id}});
+        navigate("/RedactTest", { state: { id: props.Id}});
     }
     return ( 
         <details className={classes.TestFrame}>

@@ -4,7 +4,7 @@ import LogIn from './pages/LogIn';
 import Header from './Header/Header';
 import Tests from './pages/Tests'
 import AddTest from './pages/AddTest';
-import Test from './pages/Test';
+import RedactTest from './pages/RedactTest';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path='/Register' element={<LogIn/>}/>
         <Route path='/Tests' element={<Tests/>}/>
         <Route path='/AddTest' element={<AddTest/>}/>
-        <Route path='/Test' element={<Test/>}/>
+        <Route path='/RedactTest' element={<RedactTest/>}/>
         <Route path='/'></Route>
       </Routes>
 
