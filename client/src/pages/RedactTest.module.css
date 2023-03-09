@@ -1,0 +1,39 @@
+.Name{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 20pt;
+    font-weight: 700;
+    color: #66FCF1;
+}
+.Section{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 16pt;
+    font-weight: 700;
+    color: #66FCF1;
+}
+.Background{
+    background-color: #1F2833;
+    min-height: 875px;
+    max-height: fit-content;
+}
+.Block{
+    display: flex;
+    flex-direction: row;
+}
+.AddTestPanel{
+    margin-top: 100px;
+    padding: 20px;
+    border:  solid  2px #66FCF1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}

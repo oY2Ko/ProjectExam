@@ -35,5 +35,11 @@
 }
 .Background{
     background-color: #1F2833;
-    height: 878px;
+    min-height: 875px;
+    max-height: fit-content;
+}
+.AddTestPanel{
+    display: flex;
+    justify-content: center;
+    
 }
