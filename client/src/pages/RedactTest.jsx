@@ -22,12 +22,15 @@ const RedactTest = (props) => {
         getTest();
       }, []);
 
-      const AddQuestion = () => {
+      const AddQuestion = async () => {
         if(test.questions)
         {
             let tmp = test
             tmp.questions.push({text: text, answer: answer, mark: mark})
             setTest(tmp)
+            await axios.post('https://localhost:7232/Tests/UpdateTest', test)
+            window.location.reload()
+
         }
         else
         {
@@ -35,8 +38,11 @@ const RedactTest = (props) => {
             tmp.questions = Array()
             tmp.questions.push({text: text, answer: answer, mark: mark})
             setTest(tmp)
+            await axios.post('https://localhost:7232/Tests/UpdateTest', test)
+            window.location.reload()
         }
       }
+
 
     return ( 
         test ? 
@@ -44,7 +50,7 @@ const RedactTest = (props) => {
             <div className={cl.Name}>
                 {test.name}
             </div>
-            <div className={cl.Section}>
+            <div className={cl.Description}>
                 {test.description}
             </div>
             <div className={cl.Block}>
@@ -59,15 +65,26 @@ const RedactTest = (props) => {
                 </div>
                 <div className={cl.Section}>
                     {test.questions ? test.questions.map((val, i) => 
-                        <div key={i}>
-                            <div>
-                                val.text
-                            </div>
-                            <div>
-                                val.answer
-                            </div>
-                            <div>
-                                val.mark
+                        <div className={cl.Question} key={i}>
+                            <div className={cl.Subsection}>
+                                <div className={cl.QuestionData}>
+                                <div>
+                                    Вопрос {i + 1} :<div className={cl.DefaultText}> {val.text}</div>
+                                </div>
+                                    <div>
+                                        Ответ: <div className={cl.DefaultText}>{val.answer}</div>
+                                    </div>
+                                    <div>
+                                    Баллов за правильный ответ: <div className={cl.DefaultText}>{val.mark}</div>
+                                    </div>
+                                </div>
+                                <CustomButton onClick={() =>{
+                                    axios.delete('https://localhost:7232/Tests/DeleteQuestion', {headers: {"id":val.id}})
+                                    window.location.reload()   
+                                }
+                                }
+                                    className={cl.Xmark}>&#10006;
+                                    </CustomButton>
                             </div>
                         </div>
                             ) : "Вопросов нет"}
