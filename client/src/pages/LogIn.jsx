@@ -9,8 +9,8 @@ const [login, setLogin] = useState()
 const [password, setPassword] = useState()
 
     const LogIn = async () => {
-        var res = await axios.post('https://localhost:7232/Account/LogIn', {LogIn: login, Password: password})
-        console.log(res)
+        var res = await axios.post('https://localhost:7232/Account/LogIn', {LogIn: login, Password: password}, {withCredentials: true})
+        console.log(document.cookie)
     }
 
 

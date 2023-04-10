@@ -16,7 +16,7 @@ const RedactTest = (props) => {
     const [mark, setMark] = useState()
     useEffect(() => {
         async function getTest() {
-          var res = await axios.get('https://localhost:7232/Tests/GetTest', {headers: {"id":state.id}})
+          var res = await axios.get('https://localhost:7232/Tests/GetTest', {headers: {"id":state.id}, withCredentials: true})
         setTest(res.data)
         }
         getTest();
@@ -28,7 +28,7 @@ const RedactTest = (props) => {
             let tmp = test
             tmp.questions.push({text: text, answer: answer, mark: mark})
             setTest(tmp)
-            await axios.post('https://localhost:7232/Tests/UpdateTest', test)
+            await axios.post('https://localhost:7232/Tests/UpdateTest', test, {withCredentials:true})
             window.location.reload()
 
         }
@@ -38,7 +38,7 @@ const RedactTest = (props) => {
             tmp.questions = Array()
             tmp.questions.push({text: text, answer: answer, mark: mark})
             setTest(tmp)
-            await axios.post('https://localhost:7232/Tests/UpdateTest', test)
+            await axios.post('https://localhost:7232/Tests/UpdateTest', test, {withCredentials: true})
             window.location.reload()
         }
       }
@@ -79,7 +79,7 @@ const RedactTest = (props) => {
                                     </div>
                                 </div>
                                 <CustomButton onClick={() =>{
-                                    axios.delete('https://localhost:7232/Tests/DeleteQuestion', {headers: {"id":val.id}})
+                                    axios.delete('https://localhost:7232/Tests/DeleteQuestion', {headers: {"id":val.id}, withCredentials: true})
                                     window.location.reload()   
                                 }
                                 }

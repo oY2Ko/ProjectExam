@@ -37,6 +37,7 @@
     background-color: #1F2833;
     min-height: 875px;
     max-height: fit-content;
+    background-size: cover;
 }
 .AddTestPanel{
     display: flex;

@@ -13,7 +13,7 @@ const Tests = (props) => {
     const [tests, SetTests] = useState([])
 
     const getTests = async () => {
-        const res  = await axios.get("https://localhost:7232/Tests/tests");
+        const res  = await axios.get("https://localhost:7232/Tests/tests", {withCredentials: true});
         SetTests(res.data)
         };
 
