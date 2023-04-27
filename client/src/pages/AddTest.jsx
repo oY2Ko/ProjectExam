@@ -21,7 +21,9 @@ const AddTest = () => {
 
     return ( 
         <div className={classes.Background}>
+            <div className={classes.Text}>Название теста</div>
             <CustomInput onChange={setName}>{name}</CustomInput>
+            <div className={classes.Text}>Описание теста</div>
             <CustomInput onChange={setDescription}>{description}</CustomInput>
             <CustomButton onClick={postTest}>Добавить</CustomButton>
         </div>

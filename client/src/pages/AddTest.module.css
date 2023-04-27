@@ -6,3 +6,7 @@
     justify-content: center;
     flex-direction: column;
 }
+.Text{
+    color: #66FCF1;
+    font-size: 17pt;
+}
